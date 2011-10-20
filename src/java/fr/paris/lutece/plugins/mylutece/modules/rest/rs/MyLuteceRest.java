@@ -119,7 +119,7 @@ public class MyLuteceRest
     @GET
     @Path( MyLuteceRestConstants.PATH_USER_ATTRIBUTES )
     @Produces( MediaType.APPLICATION_XML )
-    public String getCRMUserAttributesXml( @PathParam( MyLuteceRestConstants.PARAMETER_USER_GUID )
+    public String getMyLuteceUserAttributesXml( @PathParam( MyLuteceRestConstants.PARAMETER_USER_GUID )
     String strUserGuid )
     {
         StringBuffer sbXML = new StringBuffer(  );
@@ -160,7 +160,7 @@ public class MyLuteceRest
     @GET
     @Path( MyLuteceRestConstants.PATH_USER_ATTRIBUTES )
     @Produces( MediaType.APPLICATION_JSON )
-    public String getCRMUserAttributesJson( @PathParam( MyLuteceRestConstants.PARAMETER_USER_GUID )
+    public String getMyLuteceUserAttributesJson( @PathParam( MyLuteceRestConstants.PARAMETER_USER_GUID )
     String strUserGuid )
     {
         String strJSON = StringUtils.EMPTY;
@@ -202,7 +202,7 @@ public class MyLuteceRest
     @GET
     @Path( MyLuteceRestConstants.PATH_USER_ATTRIBUTE )
     @Produces( MediaType.TEXT_PLAIN )
-    public String getCRMUserAttribute( @PathParam( MyLuteceRestConstants.PARAMETER_USER_GUID )
+    public String getMyLuteceUserAttribute( @PathParam( MyLuteceRestConstants.PARAMETER_USER_GUID )
     String strUserGuid, @PathParam( MyLuteceRestConstants.PARAMETER_ATTRIBUTE )
     String strAttribute )
     {
